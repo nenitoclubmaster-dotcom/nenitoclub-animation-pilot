@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+outputs/*
+logs/*
+assets/masters/*
+!assets/masters/.gitkeep
