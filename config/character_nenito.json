@@ -1,0 +1,20 @@
+{
+  "id": "nenito",
+  "display_name": "Nenito",
+  "master_required": true,
+  "visual_lock": {
+    "skin": "negra",
+    "hair": "curto, castanho, bem cacheado",
+    "shirt": "branca com dinossauro verde andando de skate",
+    "shorts": "azul-claro",
+    "shoes": "azuis",
+    "lanyard": false
+  },
+  "forbidden_confusion": ["leozinho"],
+  "qc": {
+    "reject_if_face_drift": true,
+    "reject_if_clothing_drift": true,
+    "reject_if_skin_tone_drift": true,
+    "reject_if_lanyard_added": true
+  }
+}
