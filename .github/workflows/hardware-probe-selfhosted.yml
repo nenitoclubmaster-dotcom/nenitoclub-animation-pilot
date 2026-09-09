@@ -2,6 +2,9 @@ name: hardware-probe-selfhosted
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'ops/probe.trigger'
 
 jobs:
   probe:
