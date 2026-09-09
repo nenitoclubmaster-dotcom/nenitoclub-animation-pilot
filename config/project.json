@@ -1,0 +1,10 @@
+{
+  "project": "NenitoClub",
+  "languages": ["pt-BR", "en", "es"],
+  "human_generation_policy": "MASTER_REFERENCE_REQUIRED",
+  "open_reconstruction_for_humans": false,
+  "pilot_seconds": 25,
+  "default_episode_seconds": 210,
+  "initial_publish_cadence_per_week": 2,
+  "target_publish_cadence_per_day": 1
+}
