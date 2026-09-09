@@ -1,0 +1,12 @@
+{
+  "episode_id": "NC_PILOT_001_WAVE",
+  "language": "pt-BR",
+  "duration_s": 25,
+  "goal": "validar roteiro, timing, movimento, identidade, composição e exportação",
+  "scenes": [
+    {"id":"S01","start":0,"end":5,"characters":["nenito"],"action":"idle + olhar para câmera","motion_id":"IDLE_FRONT","narration":"Oi! Eu sou o Nenito.","camera":"medium_full","scene_asset":"park_day"},
+    {"id":"S02","start":5,"end":11,"characters":["nenito"],"action":"acenar","motion_id":"WAVE_SIMPLE","narration":"Hoje vamos descobrir algo juntos!","camera":"medium_full","scene_asset":"park_day"},
+    {"id":"S03","start":11,"end":18,"characters":["nenito"],"action":"apontar","motion_id":"POINT_SIMPLE","narration":"Olha ali!","camera":"medium","scene_asset":"park_day"},
+    {"id":"S04","start":18,"end":25,"characters":["nenito"],"action":"reação alegre","motion_id":"CELEBRATE_SMALL","narration":"Vamos brincar e aprender juntos!","camera":"medium_full","scene_asset":"park_day"}
+  ]
+}
