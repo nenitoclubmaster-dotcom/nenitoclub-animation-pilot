@@ -1,0 +1,16 @@
+name: render-pilot-selfhosted
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Canon gate
+        run: python scripts/canon_gate.py
+      - name: Submit to ComfyUI
+        env:
+          COMFYUI_URL: ${{ secrets.COMFYUI_URL }}
+        run: python scripts/comfy_submit.py
