@@ -1,0 +1,32 @@
+name: hardware-probe-selfhosted
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: self-hosted
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect Python
+        shell: bash
+        run: |
+          if command -v python3 >/dev/null 2>&1; then
+            echo "PYTHON_BIN=python3" >> "$GITHUB_ENV"
+          elif command -v python >/dev/null 2>&1; then
+            echo "PYTHON_BIN=python" >> "$GITHUB_ENV"
+          else
+            echo "Python not found"
+            exit 1
+          fi
+      - name: Hardware probe
+        shell: bash
+        run: |
+          "$PYTHON_BIN" scripts/hardware_probe.py | tee hardware-report.json
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hardware-report
+          path: hardware-report.json
+          retention-days: 7
