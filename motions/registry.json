@@ -1,0 +1,6 @@
+{
+  "IDLE_FRONT": {"source": "driving_video", "status": "TODO", "loop": true},
+  "WAVE_SIMPLE": {"source": "driving_video", "status": "TODO", "loop": false},
+  "POINT_SIMPLE": {"source": "driving_video", "status": "TODO", "loop": false},
+  "CELEBRATE_SMALL": {"source": "driving_video", "status": "TODO", "loop": false}
+}
